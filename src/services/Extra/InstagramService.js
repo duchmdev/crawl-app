@@ -10,6 +10,7 @@ let getItemByKeyword = (keyword, countryCode = "US") => {
             '--disable-setuid-sandbox'
           ]
         });
+        
         const page = await browser.newPage();
         page.setViewport({ width: 1280, height: 720 });
         await page.goto(
