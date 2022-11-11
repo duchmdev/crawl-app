@@ -16,7 +16,6 @@ let getItemByKeyword = (keyword, countryCode = "US") => {
                                   window.scrollTo(0, 5000);
                                   await new Promise((resolve) => setTimeout(resolve, 5000));
                                   let article = document.querySelectorAll('._aagu img');
-                          console.log(article)
                                   let ar_article = [];
                                   article.forEach(item => {
                                       ar_article.push({

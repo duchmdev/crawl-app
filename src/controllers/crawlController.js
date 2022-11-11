@@ -4,7 +4,6 @@
   let getInstagram = async (req, res) => {
       try {
               let infor = await InstagramService.getItemByKeyword(req.query.q);
-              console.log("infor",infor)
               return res.status(200).json(infor);
       } catch (e) {
         return res.status(500).json({
