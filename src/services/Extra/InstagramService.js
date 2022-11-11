@@ -3,7 +3,7 @@ const puppeteer = require("puppeteer");
 let getItemByKeyword = (keyword, countryCode = "US") => {
     return new Promise(async (resolve, reject) => {
       try {
-        const browser = await puppeteer.launch({  'args' : [
+        const browser = await puppeteer.launch({  args : [
           '--no-sandbox',
           '--disable-setuid-sandbox'
         ],
