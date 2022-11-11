@@ -35,6 +35,8 @@ let getItemByKeyword = (keyword, countryCode = "US") => {
           errCode: 0,
           articles,
         });
+
+        
       } catch (e) {
         reject(e);
       }
