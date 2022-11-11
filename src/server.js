@@ -37,7 +37,7 @@ app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
 
 initWebRoutes(app);
 
-let port = process.env.PORT || 8080;
+let port = process.env.PORT || 3000;
 
 app.listen(port, () => {
   //callback
