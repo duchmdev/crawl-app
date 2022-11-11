@@ -4,8 +4,10 @@ let getItemByKeyword = (keyword, countryCode = "US") => {
     return new Promise(async (resolve, reject) => {
       try {
         const browser = await puppeteer.launch({
-          headless: true,
-          args: ['--no-sandbox','--disable-setuid-sandbox']
+          'args' : [
+            '--no-sandbox',
+            '--disable-setuid-sandbox'
+          ]
         });
         const page = await browser.newPage();
         page.setViewport({ width: 1280, height: 720 });
@@ -36,7 +38,7 @@ let getItemByKeyword = (keyword, countryCode = "US") => {
           articles,
         });
 
-        
+
       } catch (e) {
         reject(e);
       }
